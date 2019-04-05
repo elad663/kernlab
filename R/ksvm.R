@@ -3063,8 +3063,9 @@ function(deci,yres)
         if (stepsize < minstep)
           {
             cat("line search fails", A, B, g1, g2, dA, dB, gd)
-            ret <- .SigmoidPredict(deci, A, B)
-            return(ret)
+            
+            # ret <- .SigmoidPredict(deci, A, B)
+            # return(ret)
           }
       }
     if(it >= maxiter -1)
